@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Yanig</title>
+    <link rel="stylesheet" href="login.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+    
+<body>
+    <div class="mobile-frame">
+        <div class="logo-container">
+            <img src="logo.png" alt="GINIG LOGO" style="width: 250px !important; height: auto !important; display: block; margin: 0 auto;">
+        </div>
+        
+        <form action="login.php" method="POST">
+            <div class="input-group">
+                <label>USERNAME</label>
+                <input type="text" name="username" placeholder="Juana Martins" required>
+            </div>
+
+            <div class="input-group">
+                <label>PASSWORD</label>
+                <div class="password-wrapper">
+                    <input type="password" name="password" id="loginPass" placeholder="********" required>
+                    <i class="fa-solid fa-eye toggle-password" id="eyeIcon"></i>
+                </div>
+                
+                <div class="forgot-container">
+                    <a href="forgot_password.php" class="forgot-link">Forgot password?</a>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-login">LOG IN</button>
+            
+            <p style="font-size: 13px; margin-top: 25px; color: #64748b; font-family: 'Inter', sans-serif; text-align: center;">
+                Not Registered yet? 
+                <a href="signup.html" style="color: #d12c45; text-decoration: none; font-weight: 700; margin-left: 3px;">Sign up</a>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        const loginPass = document.querySelector('#loginPass');
+        const eyeIcon = document.querySelector('#eyeIcon');
+
+        eyeIcon.addEventListener('click', function () {
+            const type = loginPass.getAttribute('type') === 'password' ? 'text' : 'password';
+            loginPass.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+</body>
+</html>

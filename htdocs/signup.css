@@ -1,0 +1,96 @@
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-frame {
+    background: white;
+    width: 350px;
+    padding: 35px 25px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.logo-container img {
+    width: 250px !important; /* Nilakihan ko na talaga, G! */
+    height: auto !important;
+    max-width: 90%;          /* Para hindi lumampas sa puting box */
+    display: block;
+    margin: 20px auto;       /* May space sa taas at baba, at centered */
+}
+
+h2 {
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #d12c45;
+}
+
+.gender-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.gender-container input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #d12c45;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #a82338;
+}
